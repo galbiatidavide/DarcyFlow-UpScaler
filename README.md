@@ -1,7 +1,6 @@
 # 🧪 PoreWorld: An Upscaling Strategy in Porous Media
 
 Scientific Computing Tools for Advanced Mathematical Modelling  
-**Authors**: Carlo Laurenti Argento, Davide Galbiati, Alessandro Grignani  
 **Academic Year**: 2023–2024  
 **Instructor**: Prof. Stefano Pagani  
 **Institution**: Politecnico di Milano
@@ -65,15 +64,6 @@ $$
 
 We discretize this problem using a **Multi-Point Flux Approximation (MPFA-0)** scheme.
 
-<table>
-  <tr>
-    <td align="center">
-      <strong>Porosity Behavior</strong><br>
-      <img src="https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/media/porosity_behavior.png" width="300">
-    </td>
-  </tr>
-</table>
-
 ---
 
 ## 🧩 Methodology
@@ -101,17 +91,17 @@ Due to performance constraints on the fine grid, we:
   <tr>
     <td align="center">
       <strong>Clustering on 100-cells Grid</strong><br>
-      <img src="https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/media/clustering_sd100.png" width="300">
+      <img src="https://raw.githubusercontent.com/galbiatidavide/DarcyFlow-UpScaler/main/poreworld_images/clustering_sd100.png" width="300">
     </td>
     <td align="center">
       <strong>Clustering on 400-cells Grid</strong><br>
-      <img src="https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/media/clustering_sd400.png" width="300">
+      <img src="https://raw.githubusercontent.com/galbiatidavide/DarcyFlow-UpScaler/main/poreworld_images/clustering_sd400.png" width="300">
     </td>
   </tr>
   <tr>
     <td align="center" colspan="2">
       <strong>Overlap of Clusters</strong><br>
-      <img src="https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/media/cluster_overlap.png" width="400">
+      <img src="https://raw.githubusercontent.com/galbiatidavide/DarcyFlow-UpScaler/main/poreworld_images/cluster_overlap.png" width="400">
     </td>
   </tr>
 </table>
@@ -126,22 +116,11 @@ We validated our upscaling approach by comparing original and reconstructed perm
   <tr>
     <td align="center">
       <strong>Original Permeability (kxx) - Layer 10</strong><br>
-      <img src="https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/media/original_kxx_layer10.png" width="300">
+      <img src="https://raw.githubusercontent.com/galbiatidavide/DarcyFlow-UpScaler/main/poreworld_images/original_kxx_layer10.png" width="300">
     </td>
     <td align="center">
       <strong>Upscaled Permeability - Layer 10</strong><br>
-      <img src="https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/media/upscaled_kxx_layer10.png" width="300">
-    </td>
-  </tr>
-</table>
-
-Estimated well positions also showed good agreement with ground truth.
-
-<table>
-  <tr>
-    <td align="center">
-      <strong>Estimated vs Real Well Coordinates</strong><br>
-      <img src="https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/media/estimated_vs_real_coordinates.png" width="400">
+      <img src="https://raw.githubusercontent.com/galbiatidavide/DarcyFlow-UpScaler/main/poreworld_images/upscaled_kxx_layer10.png" width="300">
     </td>
   </tr>
 </table>
@@ -155,11 +134,13 @@ We tested two methods to predict the **concentration outflow** profile:
 1. ❌ **MLP Neural Network** — fitted parametric distributions (normal or exponential). Poor generalization.
 2. ✅ **Spatially Weighted Outflow Averaging** — selected outflows from nearby simulations and interpolated.
 
+Estimated well positions also showed good agreement with ground truth.
+
 <table>
   <tr>
     <td align="center">
-      <strong>Method Comparison</strong><br>
-      <img src="https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/media/method_comparison.png" width="400">
+      <strong>Estimated vs Real Well Coordinates</strong><br>
+      <img src="https://raw.githubusercontent.com/galbiatidavide/DarcyFlow-UpScaler/main/poreworld_images/estimated_vs_real_coordinates.png" width="400">
     </td>
   </tr>
 </table>
