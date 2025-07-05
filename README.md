@@ -125,17 +125,6 @@ We validated our upscaling approach by comparing original and reconstructed perm
   </tr>
 </table>
 
-Estimated well positions also showed good agreement with ground truth.
-
-<table>
-  <tr>
-    <td align="center">
-      <strong>Estimated vs Real Well Coordinates</strong><br>
-      <img src="https://raw.githubusercontent.com/galbiatidavide/DarcyFlow-UpScaler/main/poreworld_images/estimated_vs_real_coordinates.png" width="400">
-    </td>
-  </tr>
-</table>
-
 ---
 
 ## 📉 Checkpoint 3: Surrogate Model for Contaminant Outflow
@@ -145,11 +134,13 @@ We tested two methods to predict the **concentration outflow** profile:
 1. ❌ **MLP Neural Network** — fitted parametric distributions (normal or exponential). Poor generalization.
 2. ✅ **Spatially Weighted Outflow Averaging** — selected outflows from nearby simulations and interpolated.
 
+Estimated well positions also showed good agreement with ground truth.
+
 <table>
   <tr>
     <td align="center">
-      <strong>Method Comparison</strong><br>
-      <img src="https://raw.githubusercontent.com/galbiatidavide/DarcyFlow-UpScaler/main/poreworld_images/method_comparison.png" width="400">
+      <strong>Estimated vs Real Well Coordinates</strong><br>
+      <img src="https://raw.githubusercontent.com/galbiatidavide/DarcyFlow-UpScaler/main/poreworld_images/estimated_vs_real_coordinates.png" width="400">
     </td>
   </tr>
 </table>
