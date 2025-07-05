@@ -1,7 +1,6 @@
 # 🧪 PoreWorld: An Upscaling Strategy in Porous Media
 
 Scientific Computing Tools for Advanced Mathematical Modelling  
-**Authors**: Carlo Laurenti Argento, Davide Galbiati, Alessandro Grignani  
 **Academic Year**: 2023–2024  
 **Instructor**: Prof. Stefano Pagani  
 **Institution**: Politecnico di Milano
@@ -69,7 +68,7 @@ We discretize this problem using a **Multi-Point Flux Approximation (MPFA-0)** s
   <tr>
     <td align="center">
       <strong>Porosity Behavior</strong><br>
-      <img src="https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/media/porosity_behavior.png" width="300">
+      <img src="https://raw.githubusercontent.com/galbiatidavide/DarcyFlow-UpScaler/main/poreworld_images/porosity_behavior.png" width="300">
     </td>
   </tr>
 </table>
